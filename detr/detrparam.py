@@ -1,0 +1,37 @@
+class DetrParam:
+    num_eopch = 1000
+    batch_size = 128
+    d_model = 256
+    dim_feedforward = 2048
+    feature_size = 256
+    nhead = 4
+    num_encoder_layers = 2
+    num_decoder_layers = 2
+    max_objects = 90
+    num_classes = 2
+    cls_param = 1.
+    box_param = 10.
+    class_weight = [1.0, 5.0]
+    cxcywh = False
+    sort_box_coord = False
+    use_pretrained = True
+    use_auxiliary_loss = False
+    topk = 0
+    norm = "layer_norm"
+    pe_size = 50
+    pe_auto = True
+    lr_backbone = 1e-5
+    lr = 1e-4
+    lr_step = 50
+    dp_backbone = 0.1
+    weight_decay = 1e-4
+    eps = 1e-6
+    save_per = 1
+    device = "cuda"
+    threshold = 0.1
+
+    max_errors = 30
+    min_errors = 2
+    dataset_size = 1100
+    activation = "relu"
+    optimizer = "adamw"
